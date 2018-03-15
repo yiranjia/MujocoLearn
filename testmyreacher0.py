@@ -146,7 +146,7 @@ for itr in range(n_iter):
         print ("iteration %i. mean reward: %8.3g. max reward: %8.3g. " % (itr, np.mean(rewards), np.max(rewards)))
         # print ("mean theta:", theta_mean)
 
-    if itr % 50 == 0:
+    if itr % 1 == 0:
         testRollout(theta_mean)
 
 
