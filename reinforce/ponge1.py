@@ -84,7 +84,7 @@ episode_number = 0
 
 
 #while True:
-while episode_number < 100:
+while episode_number < 10000:
 
     if render: env.render()
 
