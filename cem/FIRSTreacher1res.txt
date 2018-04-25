@@ -1,0 +1,91 @@
+n_steps = 30 # actions of each rollout
+n_iter = 1000 # iterations of training
+batch_size = 50 # samples of each iteration
+
+
+iteration 0. mean reward:    -46.7. max reward:    -7.64.
+Creating window glfw
+iteration 25. mean reward:    -7.95. max reward:    -2.55.
+iteration 50. mean reward:    -7.69. max reward:    -1.63.
+iteration 75. mean reward:    -7.09. max reward:    -1.68.
+iteration 100. mean reward:    -7.71. max reward:     -2.4.
+iteration 125. mean reward:    -7.41. max reward:    -1.29.
+iteration 150. mean reward:    -7.42. max reward:    -3.83.
+iteration 175. mean reward:    -7.45. max reward:    -2.19.
+iteration 200. mean reward:    -8.03. max reward:    -1.91.
+iteration 225. mean reward:    -6.72. max reward:     -2.4.
+iteration 250. mean reward:    -7.93. max reward:    -2.66.
+iteration 275. mean reward:     -7.4. max reward:    -2.71.
+iteration 300. mean reward:     -7.3. max reward:    -1.77.
+iteration 325. mean reward:    -7.33. max reward:    -1.06.
+iteration 350. mean reward:    -7.85. max reward:     -2.3.
+iteration 375. mean reward:    -8.12. max reward:    -1.62.
+iteration 400. mean reward:    -8.07. max reward:    -3.17.
+iteration 425. mean reward:    -7.58. max reward:    -2.91.
+iteration 450. mean reward:    -7.41. max reward:    -3.08.
+iteration 475. mean reward:    -7.56. max reward:    -2.52.
+iteration 500. mean reward:    -7.93. max reward:    -2.16.
+iteration 525. mean reward:    -7.58. max reward:    -1.49.
+iteration 550. mean reward:    -7.45. max reward:     -1.6.
+iteration 575. mean reward:    -8.09. max reward:    -2.76.
+iteration 600. mean reward:    -7.75. max reward:    -2.68.
+iteration 625. mean reward:    -7.92. max reward:    -3.51.
+iteration 650. mean reward:    -7.16. max reward:    -1.54.
+iteration 675. mean reward:    -6.71. max reward:    -1.95.
+iteration 700. mean reward:    -7.58. max reward:    -1.01.
+iteration 725. mean reward:     -7.2. max reward:    -1.21.
+iteration 750. mean reward:    -7.91. max reward:    -1.44.
+iteration 775. mean reward:     -7.4. max reward:    -2.72.
+iteration 800. mean reward:    -7.32. max reward:    -1.52.
+iteration 825. mean reward:    -7.54. max reward:    -1.67.
+iteration 850. mean reward:    -8.22. max reward:    -3.45.
+iteration 875. mean reward:    -7.74. max reward:    -2.26.
+iteration 900. mean reward:    -7.63. max reward:   -0.832.
+iteration 925. mean reward:    -7.56. max reward:    -1.96.
+iteration 950. mean reward:     -7.3. max reward:    -1.83.
+iteration 975. mean reward:     -7.2. max reward:    -2.29.
+
+
+
+
+
+
+following incorrect discount factor
+
+n_steps = 20 # actions of each rollout
+n_iter = 800 # iterations of training
+batch_size = 50 # samples of each iteration
+
+iteration 0. mean reward:    -13.5. max reward:    -3.56.
+Creating window glfw
+iteration 25. mean reward:    -2.72. max reward:     -0.9.
+iteration 50. mean reward:    -2.28. max reward:   -0.857.
+iteration 75. mean reward:    -2.23. max reward:   -0.979.
+iteration 100. mean reward:    -2.71. max reward:   -0.737.
+iteration 125. mean reward:    -2.36. max reward:   -0.807.
+iteration 150. mean reward:    -2.19. max reward:   -0.711.
+iteration 175. mean reward:    -2.24. max reward:   -0.963.
+iteration 200. mean reward:    -2.44. max reward:    -1.05.
+iteration 225. mean reward:    -2.41. max reward:   -0.896.
+iteration 250. mean reward:    -2.32. max reward:   -0.966.
+iteration 275. mean reward:    -2.49. max reward:    -1.14.
+iteration 300. mean reward:    -2.42. max reward:   -0.733.
+iteration 325. mean reward:    -2.31. max reward:    -1.03.
+iteration 350. mean reward:    -2.46. max reward:    -0.85.
+iteration 375. mean reward:    -2.47. max reward:   -0.917.
+iteration 400. mean reward:    -2.37. max reward:   -0.965.
+iteration 425. mean reward:    -2.33. max reward:    -0.88.
+iteration 450. mean reward:    -2.26. max reward:   -0.859.
+iteration 475. mean reward:    -2.55. max reward:   -0.725.
+iteration 500. mean reward:    -2.61. max reward:   -0.887.
+iteration 525. mean reward:    -2.42. max reward:   -0.765.
+iteration 550. mean reward:    -2.61. max reward:    -1.01.
+iteration 575. mean reward:    -2.26. max reward:    -1.04.
+iteration 600. mean reward:    -2.05. max reward:   -0.756.
+iteration 625. mean reward:    -2.26. max reward:   -0.699.
+iteration 650. mean reward:    -2.23. max reward:   -0.799.
+iteration 675. mean reward:    -2.32. max reward:   -0.657.
+iteration 700. mean reward:    -2.54. max reward:   -0.891.
+iteration 725. mean reward:    -2.43. max reward:    -0.72.
+iteration 750. mean reward:    -2.39. max reward:       -1.
+iteration 775. mean reward:    -2.23. max reward:   -0.767.
