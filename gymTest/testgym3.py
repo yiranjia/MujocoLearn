@@ -21,11 +21,9 @@ env = gym.make('CartPole-v0')
 
 print(env.action_space)
 # Discrete(2)
-#> Box(2,)
 
 print(env.observation_space)
 # Box(4,)
-#> Box(11,)
 
 
 
@@ -34,6 +32,8 @@ print(env.observation_space.high)
 
 print(env.observation_space.low)
 #> array([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf])
+
+
 
 # [4.8000002e+00 3.4028235e+38 4.1887903e-01 3.4028235e+38]
 # [-4.8000002e+00 -3.4028235e+38 -4.1887903e-01 -3.4028235e+38]

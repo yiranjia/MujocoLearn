@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1864ad9e-9f96-4532-a65a-e0311f511960" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/gymTest/testgym4.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/reinforce/vpgContiAction.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/reinforce/vpgReacher.py" afterPath="$PROJECT_DIR$/reinforce/vpgDiscreteAction.py" />
+      <change beforePath="$PROJECT_DIR$/gymTest/testgym.py" afterPath="$PROJECT_DIR$/gymTest/testgym.py" />
+      <change beforePath="$PROJECT_DIR$/gymTest/testgym3.py" afterPath="$PROJECT_DIR$/gymTest/testgym3.py" />
+      <change beforePath="$PROJECT_DIR$/reinforce/vpgDiscreteAction.py" afterPath="$PROJECT_DIR$/reinforce/vpgDiscreteAction.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,27 +41,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vpgDiscreteAction.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/reinforce/vpgDiscreteAction.py">
+      <file leaf-file-name="vpgContiAction.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/reinforce/vpgContiAction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="332" column="0" lean-forward="true" selection-start-line="332" selection-start-column="0" selection-end-line="332" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#5578#6261#1" expanded="false" />
-                <element signature="e#7433#7669#1" expanded="false" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testmyreacher1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cem/testmyreacher1.py">
+      <file leaf-file-name="vpgDiscreteAction.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reinforce/vpgDiscreteAction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="2996">
+              <caret line="227" column="0" lean-forward="true" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#5690#6373#1" expanded="false" />
+                <element signature="e#7545#7781#1" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -66,12 +68,63 @@
       <file leaf-file-name="lab4main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reinforce/lab4main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="-5443">
               <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
               <folding>
                 <element signature="e#23#1314#1" expanded="false" />
-                <element signature="e#1316#1351#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testmyreacher1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cem/testmyreacher1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testgym3.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gymTest/testgym3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pongres0reinforce.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reinforce/pongres0reinforce.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="2375" column="0" lean-forward="false" selection-start-line="2375" selection-start-column="0" selection-end-line="2375" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testgym.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gymTest/testgym.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testgym2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gymTest/testgym2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,18 +152,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>env_specs</find>
-      <find>gym</find>
-      <find>reset</find>
-      <find>batch</find>
-      <find>genera</find>
-      <find>reward</find>
-      <find>std</find>
-      <find>theta_std</find>
-      <find>iteri</find>
-      <find>step</find>
       <find>env.</find>
-      <find>render</find>
       <find>20</find>
       <find>done</find>
       <find>resume</find>
@@ -125,6 +167,21 @@
       <find>rng</find>
       <find>get_grad_logp</find>
       <find>thetas</find>
+      <find>dim_act</find>
+      <find>dim_theta</find>
+      <find>batch_siz</find>
+      <find>batch_si</find>
+      <find>n_sam</find>
+      <find>n_it</find>
+      <find>batch_size</find>
+      <find>n_samples</find>
+      <find>episode_rewards</find>
+      <find>print</find>
+      <find>render</find>
+      <find>action</find>
+      <find>get_grad</find>
+      <find>weighted</find>
+      <find>soft</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,7 +213,11 @@
         <option value="$PROJECT_DIR$/reinforce/simple_utils.py" />
         <option value="$PROJECT_DIR$/reinforce/lab4main.py" />
         <option value="$PROJECT_DIR$/reinforce/vpgReacher.py" />
+        <option value="$PROJECT_DIR$/gymTest/testgym3.py" />
+        <option value="$PROJECT_DIR$/gymTest/testgym4.py" />
+        <option value="$PROJECT_DIR$/gymTest/testgym.py" />
         <option value="$PROJECT_DIR$/reinforce/vpgDiscreteAction.py" />
+        <option value="$PROJECT_DIR$/reinforce/vpgContiAction.py" />
       </list>
     </option>
   </component>
@@ -205,6 +266,11 @@
             <path>
               <item name="testReacher" type="b2602c69:ProjectViewProjectNode" />
               <item name="testReacher" type="462c0819:PsiDirectoryNode" />
+              <item name="gymTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testReacher" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testReacher" type="462c0819:PsiDirectoryNode" />
               <item name="reinforce" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -221,16 +287,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/reinforce" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/reacherCEM" />
       <recent name="$PROJECT_DIR$/gymTest" />
       <recent name="$PROJECT_DIR$/reinforce" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/reachertest" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/reinforce" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -245,7 +311,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bootcplab4main">
+  <component name="RunManager" selected="Python.vpgContiAction">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -265,7 +331,64 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="bootcplab4main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="testgym" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gymTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testReacher" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gymTest/testgym.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="testgym4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gymTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testReacher" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gymTest/testgym4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="testmyreacher1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cem" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="testReacher" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cem/testmyreacher1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="vpgContiAction" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -278,70 +401,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testReacher" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reinforce/lab4main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reinforce/vpgContiAction.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="ponge1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testReacher" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reinforce/ponge1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="testmyreacher0" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reacherCEM" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testReacher" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reacherCEM/testmyreacher0.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="testmyreacher1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reacherTest" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="testReacher" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reacherTest/testmyreacher1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="vpgreacher1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="vpgDiscreteAction" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -354,7 +420,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="testReacher" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reacherCEM/pendulumCEM.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reinforce/vpgDiscreteAction.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -478,19 +544,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ponge1" />
-      <item index="1" class="java.lang.String" itemvalue="Python.testmyreacher1 (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.vpgreacher1" />
-      <item index="3" class="java.lang.String" itemvalue="Python.testmyreacher0" />
-      <item index="4" class="java.lang.String" itemvalue="Python.bootcplab4main" />
+      <item index="0" class="java.lang.String" itemvalue="Python.testgym4" />
+      <item index="1" class="java.lang.String" itemvalue="Python.vpgDiscreteAction" />
+      <item index="2" class="java.lang.String" itemvalue="Python.testmyreacher1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.testgym" />
+      <item index="4" class="java.lang.String" itemvalue="Python.vpgContiAction" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.bootcplab4main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.testmyreacher0" />
-        <item index="2" class="java.lang.String" itemvalue="Python.vpgreacher1" />
-        <item index="3" class="java.lang.String" itemvalue="Python.testmyreacher1 (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ponge1" />
+        <item index="0" class="java.lang.String" itemvalue="Python.vpgContiAction" />
+        <item index="1" class="java.lang.String" itemvalue="Python.vpgDiscreteAction" />
+        <item index="2" class="java.lang.String" itemvalue="Python.testgym" />
+        <item index="3" class="java.lang.String" itemvalue="Python.testmyreacher1" />
+        <item index="4" class="java.lang.String" itemvalue="Python.testgym4" />
       </list>
     </recent_temporary>
   </component>
@@ -516,10 +582,10 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4065934" sideWeight="0.51053864" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08464329" sideWeight="0.4971475" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26243782" sideWeight="0.4971475" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3432836" sideWeight="0.48946136" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27114427" sideWeight="0.48946136" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16595136" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -551,9 +617,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/reacherCEM/testmyreacher0.py" />
-    <entry file="file://$PROJECT_DIR$/reacherCEM/FIRSTreacher0res.txt" />
-    <entry file="file://$PROJECT_DIR$/reacherCEM/testmyreacher1.py" />
     <entry file="file://$PROJECT_DIR$/gymfilesbackup/reacher.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -670,34 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gymTest/testgym.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gymTest/testgym3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gymTest/testgym2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gymTest/tosser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gymTest/testatari.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -742,20 +777,35 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reacherCEM/testmyreacher1.py" />
-    <entry file="file://$PROJECT_DIR$/reinforce/lab4main.py">
+    <entry file="file://$PROJECT_DIR$/gymTest/tosser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        <state relative-caret-position="345">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gymTest/testgym4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cem/testmyreacher0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-128">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#23#1314#1" expanded="false" />
-            <element signature="e#1316#1351#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reinforce/pongres0reinforce.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
+        <state relative-caret-position="339">
           <caret line="2375" column="0" lean-forward="false" selection-start-line="2375" selection-start-column="0" selection-end-line="2375" selection-end-column="0" />
           <folding />
         </state>
@@ -771,6 +821,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cem/testmyreacher1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gymTest/testgym2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gymTest/testgym3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gymTest/testgym.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reinforce/lab4main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5443">
+          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding>
+            <element signature="e#23#1314#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reinforce/vpgDiscreteAction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2996">
+          <caret line="227" column="0" lean-forward="true" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#5690#6373#1" expanded="false" />
+            <element signature="e#7545#7781#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/reinforce/ponge1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -781,25 +887,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cem/testmyreacher1.py">
+    <entry file="file://$PROJECT_DIR$/reinforce/vpgContiAction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reinforce/vpgDiscreteAction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="332" column="0" lean-forward="true" selection-start-line="332" selection-start-column="0" selection-end-line="332" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#5578#6261#1" expanded="false" />
-            <element signature="e#7433#7669#1" expanded="false" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

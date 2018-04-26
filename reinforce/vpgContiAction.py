@@ -5,7 +5,7 @@ import scipy.special
 import pickle
 
 
-env = gym.make('CartPole-v0')
+env = gym.make('InvertedPendulum-v2')
 
 # preparation
 # ----------------------------------------
@@ -134,7 +134,11 @@ def get_action(theta, ob, rng=np.random):
     :param ob: A vector of size |S|
     :return: An integer
     """
-    return weighted_sample(compute_logits(theta, ob), rng=rng)
+    #return weighted_sample(compute_logits(theta, ob), rng=rng)
+
+    ob_1 = include_bias(ob)
+    mean = theta.dot(ob_1)
+    return rng.normal(loc=mean, scale=1.)
 
 
 def get_grad_logp_action(theta, ob, action):
@@ -145,11 +149,19 @@ def get_grad_logp_action(theta, ob, action):
     :return: A matrix of size |A| * (|S|+1)
     """
     # grad = np.zeros_like(theta)
-    a = np.zeros(theta.shape[0])
-    a[action] = 1
-    p = softmax(compute_logits(theta, ob))
+
+    # a = np.zeros(theta.shape[0])
+    # a[action] = 1
+    # p = softmax(compute_logits(theta, ob))
+    # ob_1 = include_bias(ob)
+    # return np.outer(a - p, ob_1)
+
     ob_1 = include_bias(ob)
-    return np.outer(a - p, ob_1)
+    mean = theta.dot(ob_1)
+    zs = action - mean
+    return np.outer(zs, ob_1)
+
+
 
 
 def compute_entropy(logits):
@@ -170,7 +182,8 @@ def compute_entropy(logits):
 # ----------------------------------------
 
 obs_dim = env.observation_space.shape[0]
-action_dim = env.action_space.n
+action_dim = env.action_space.shape[0]
+#action_dim = env.action_space.n
 # get_action = generateAct
 # get_grad_logp_action = get_grad_logp_action
 
@@ -327,6 +340,6 @@ for itr in range(n_itrs):
         ent = np.mean(compute_entropy(logits))
         perp = np.exp(ent)
 
-        print("Iteration: %d AverageReturn: %.2f Entropy: %.2f Perplexity: %.2f |theta|_2: %.2f" % (
-            itr, np.mean(episode_rewards), ent, perp, np.linalg.norm(theta)))
-        # print("Iteration: %d AverageReturn: %.2f |theta|_2: %.2f" % (itr, np.mean(episode_rewards), np.linalg.norm(theta)))
+        #print("Iteration: %d AverageReturn: %.2f Entropy: %.2f Perplexity: %.2f |theta|_2: %.2f" % (
+        #    itr, np.mean(episode_rewards), ent, perp, np.linalg.norm(theta)))
+        print("Iteration: %d AverageReturn: %.2f |theta|_2: %.2f" % (itr, np.mean(episode_rewards), np.linalg.norm(theta)))
