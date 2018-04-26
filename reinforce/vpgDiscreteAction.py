@@ -27,7 +27,7 @@ theta_std = np.ones(dim_theta)
 H = 200  # number of hidden layer neurons
 batch_size = 10  # every how many episodes to do a param update?
 learning_rate = 1e-4
-gamma = 0.99  # discount factor for reward
+discount = 0.99  # discount factor for reward
 decay_rate = 0.99  # decay factor for RMSProp leaky sum of grad^2
 resume = False  # resume from previous checkpoint?
 render = True
@@ -80,8 +80,8 @@ def testRollout(theta):
 
         a = generateAct(theta, cur_state)
         next, reward, done, info = env.step(a)
-
-        total += reward * discount ** t
+        total += reward
+        #total += reward * discount ** t
 
         if t % 3 == 0:
             env.render()
@@ -152,6 +152,20 @@ def get_grad_logp_action(theta, ob, action):
     return np.outer(a - p, ob_1)
 
 
+def compute_entropy(logits):
+    """
+    :param logits: A matrix of size N * |A|
+    :return: A vector of size N
+    """
+    logp = log_softmax(logits)
+    return -np.sum(logp * np.exp(logp), axis=-1)
+
+
+
+
+
+
+
 # main
 # ----------------------------------------
 
@@ -178,6 +192,8 @@ baselines = np.zeros(timestep_limit)
 # iterations
 # ----------------------------------------
 
+
+
 n_itrs = 1000
 
 for itr in range(n_itrs):
@@ -188,14 +204,18 @@ for itr in range(n_itrs):
         grad = np.zeros_like(theta)
         episode_rewards = []
 
+
         # Store cumulative returns for each time step
         all_returns = [[] for _ in range(timestep_limit)]
-
         all_observations = []
         all_actions = []
 
 
+
+        # each iteration has batch_size samples
         while n_samples < batch_size:
+
+
             observations = []
             actions = []
             rewards = []
@@ -204,6 +224,7 @@ for itr in range(n_itrs):
 
             # Only render the first trajectory
             render_episode = n_samples == 0
+
 
             # Collect a new trajectory
             while not done:
@@ -221,10 +242,91 @@ for itr in range(n_itrs):
                     env.render()
 
 
-            # Go back in time to compute returns and accumulate gradient
+            # this episode / sample finished !!!
+            # ------------------------------------------------------------
+            # Go back in time to *compute returns* and *accumulate gradient*
             # Compute the gradient along this trajectory
+
             R = 0.
             for t in reversed(range(len(observations))):
-                print (a)
+
+                def compute_update(discount, R_tplus1, theta, s_t, a_t, r_t, b_t, get_grad_logp_action):
+                    """
+                    :param discount: A scalar
+                    :param R_tplus1: A scalar
+                    :param theta: A matrix of size |A| * (|S|+1)
+                    :param s_t: A vector of size |S|
+                    :param a_t: Either a vector of size |A| or an integer, depending on the environment
+                    :param r_t: A scalar
+                    :param b_t: A scalar
+                    :param get_grad_logp_action: A function, mapping from (theta, ob, action) to the gradient (a
+                    matrix of size |A| * (|S|+1) )
+                    :return: A tuple, consisting of a scalar and a matrix of size |A| * (|S|+1)
+                    """
+                    R_t = discount * R_tplus1 + r_t
+                    pg_theta = get_grad_logp_action(theta, s_t, a_t) * (R_t - b_t)  # modulate the gradient with advantage (PG magic happens right here.)
+                    return R_t, pg_theta
 
 
+                R, grad_t = compute_update(
+                        discount = discount,
+                        R_tplus1=R,
+                        theta=theta,
+                        s_t=observations[t],
+                        a_t=actions[t],
+                        r_t=rewards[t],
+                        b_t=baselines[t],
+                        get_grad_logp_action=get_grad_logp_action
+                )
+
+                all_returns[t].append(R)
+                grad += grad_t
+
+
+            # append this episode / sample 's rew obs actions to this iterations 's
+            episode_rewards.append(np.sum(rewards))
+            all_observations.extend(observations)
+            all_actions.extend(actions)
+
+
+
+        # this iterations (with batch_size samples) finished!!!
+
+        # computing baseline
+        # --------------------------------------------
+        def compute_baselines(all_returns):
+            """
+            :param all_returns: A list of size T, where the t-th entry is a list of numbers, denoting the returns
+            collected at time step t across different episodes
+            :return: A vector of size T
+            """
+            baselines = np.zeros(len(all_returns))
+            for t in range(len(all_returns)):
+                if len(all_returns[t]) > 0:
+                    baselines[t] = np.mean(all_returns[t])
+
+            return baselines
+
+        baselines = compute_baselines(all_returns)
+        # baselines = np.zeros(timestep_limit)
+
+
+
+        # update parameter theta
+        # --------------------------------------------
+
+        grad = grad / (np.linalg.norm(grad) + 1e-8) # Roughly normalize the gradient
+
+        theta += learning_rate * grad
+
+
+        # print statements
+        # --------------------------------------------
+
+        logits = compute_logits(theta, np.array(all_observations))
+        ent = np.mean(compute_entropy(logits))
+        perp = np.exp(ent)
+
+        print("Iteration: %d AverageReturn: %.2f Entropy: %.2f Perplexity: %.2f |theta|_2: %.2f" % (
+            itr, np.mean(episode_rewards), ent, perp, np.linalg.norm(theta)))
+        # print("Iteration: %d AverageReturn: %.2f |theta|_2: %.2f" % (itr, np.mean(episode_rewards), np.linalg.norm(theta)))

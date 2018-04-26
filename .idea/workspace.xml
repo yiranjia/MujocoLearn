@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1864ad9e-9f96-4532-a65a-e0311f511960" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/reinforce/lab4main.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/reinforce/vpgReacher.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/other.xml" afterPath="$PROJECT_DIR$/.idea/other.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/testReacher.iml" afterPath="$PROJECT_DIR$/.idea/testReacher.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/reacherCEM/FIRSTreacher0res.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/reacherCEM/FIRSTreacher1res.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/reacherCEM/SECreacher1res.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/reacherCEM/testmyreacher0.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/reacherCEM/testmyreacher1.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/save.p" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/reinforce/vpgReacher.py" afterPath="$PROJECT_DIR$/reinforce/vpgDiscreteAction.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,13 +37,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vpgReacher.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/reinforce/vpgReacher.py">
+      <file leaf-file-name="vpgDiscreteAction.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/reinforce/vpgDiscreteAction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="221" column="0" lean-forward="true" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+            <state relative-caret-position="635">
+              <caret line="332" column="0" lean-forward="true" selection-start-line="332" selection-start-column="0" selection-end-line="332" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#5578#6261#1" expanded="false" />
+                <element signature="e#7433#7669#1" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -61,8 +54,8 @@
       <file leaf-file-name="testmyreacher1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cem/testmyreacher1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="139" column="14" lean-forward="false" selection-start-line="139" selection-start-column="8" selection-end-line="139" selection-end-column="14" />
+            <state relative-caret-position="315">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -130,6 +123,7 @@
       <find>theta</find>
       <find>thetaS</find>
       <find>rng</find>
+      <find>get_grad_logp</find>
       <find>thetas</find>
     </findStrings>
   </component>
@@ -162,6 +156,7 @@
         <option value="$PROJECT_DIR$/reinforce/simple_utils.py" />
         <option value="$PROJECT_DIR$/reinforce/lab4main.py" />
         <option value="$PROJECT_DIR$/reinforce/vpgReacher.py" />
+        <option value="$PROJECT_DIR$/reinforce/vpgDiscreteAction.py" />
       </list>
     </option>
   </component>
@@ -524,7 +519,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08464329" sideWeight="0.4971475" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34340993" sideWeight="0.48946136" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3432836" sideWeight="0.48946136" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16595136" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -788,20 +783,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cem/testmyreacher1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="139" column="14" lean-forward="false" selection-start-line="139" selection-start-column="8" selection-end-line="139" selection-end-column="14" />
+        <state relative-caret-position="315">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reinforce/vpgReacher.py">
+    <entry file="file://$PROJECT_DIR$/reinforce/vpgDiscreteAction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="221" column="0" lean-forward="true" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+        <state relative-caret-position="635">
+          <caret line="332" column="0" lean-forward="true" selection-start-line="332" selection-start-column="0" selection-end-line="332" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#5578#6261#1" expanded="false" />
+            <element signature="e#7433#7669#1" expanded="false" />
           </folding>
         </state>
       </provider>
